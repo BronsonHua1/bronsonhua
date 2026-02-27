@@ -5,146 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bronson Hua | Software Engineer</title>
   <style>
-    :root { --max: 980px; }
+    :root { --max: 1000px; }
     body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-           line-height:1.55; color:#111; background:#fff; }
+           line-height:1.6; color:#111; background:#fff; }
     header { position:sticky; top:0; background:#fff; border-bottom:1px solid #eee; }
-    nav { max-width: var(--max); margin:0 auto; padding:12px 16px; display:flex; gap:16px; flex-wrap:wrap; }
+    nav { max-width: var(--max); margin:0 auto; padding:14px 20px; display:flex; gap:20px; }
     nav a { text-decoration:none; color:#111; font-weight:600; }
     nav a:hover { text-decoration:underline; }
-    main { max-width: var(--max); margin:0 auto; padding:32px 16px 60px; }
-    section { padding:40px 0; border-bottom:1px solid #f1f1f1; }
-    h1 { font-size:36px; margin:0 0 8px; }
-    h2 { font-size:22px; margin:0 0 16px; }
+    main { max-width: var(--max); margin:0 auto; padding:40px 20px 60px; }
+    section { padding:60px 0; border-bottom:1px solid #f2f2f2; }
+    h1 { font-size:40px; margin-bottom:10px; }
+    h2 { font-size:26px; margin-bottom:20px; }
     .muted { color:#555; }
-    .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
-    .btn { border:1px solid #ddd; padding:10px 14px; border-radius:10px; text-decoration:none; color:#111; font-weight:600; }
-    .btn:hover { border-color:#bbb; }
-    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:16px; }
-    .card { grid-column: span 12; border:1px solid #eee; border-radius:14px; padding:18px; }
+    .btns { display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
+    .btn { border:1px solid #ddd; padding:10px 16px; border-radius:10px; text-decoration:none; color:#111; font-weight:600; }
+    .btn:hover { border-color:#aaa; }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap:20px; }
+    .card { grid-column: span 12; border:1px solid #eee; border-radius:16px; padding:20px; }
     @media (min-width: 900px) { .card { grid-column: span 6; } }
     .tags { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0 12px; }
-    .tag { font-size:12px; padding:4px 8px; border:1px solid #eee; border-radius:999px; background:#fafafa; }
-    ul { margin:10px 0 0 18px; }
-    footer { max-width: var(--max); margin:0 auto; padding:24px 16px; color:#666; }
+    .tag { font-size:12px; padding:5px 10px; border:1px solid #eee; border-radius:999px; background:#fafafa; }
+    ul { margin-top:10px; padding-left:18px; }
+    footer { max-width: var(--max); margin:0 auto; padding:24px 20px; color:#666; }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="home">
-      <h1>Bronson Hua</h1>
-      <p class="muted"><strong>Software Engineer</strong> — building reliable projects with clean architecture, strong debugging, and clear documentation.</p>
+<header>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-      <div class="btns">
-        <a class="btn" href="YOUR_RESUME_LINK" target="_blank" rel="noreferrer">Resume (PDF)</a>
-        <a class="btn" href="YOUR_GITHUB_LINK" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn" href="YOUR_LINKEDIN_LINK" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn" href="mailto:YOUR_EMAIL">Email</a>
+<main>
+
+<section id="home">
+  <h1>Bronson Hua</h1>
+  <p class="muted"><strong>Software Engineer</strong> — building reliable software with strong fundamentals in debugging, clean architecture, and data modeling.</p>
+
+  <div class="btns">
+    <a class="btn" href="BronsonHuaResume.pdf" target="_blank">Resume (PDF)</a>
+    <a class="btn" href="https://github.com/BronsonHua1" target="_blank">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/bronson-hua" target="_blank">LinkedIn</a>
+    <a class="btn" href="mailto:bronsonhua741@gmail.com">Email</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>NutriLens</h3>
+      <p class="muted">Mobile application that scans nutrition labels and explains ingredient impacts.</p>
+
+      <div class="tags">
+        <span class="tag">Flutter</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">OCR</span>
+        <span class="tag">Mobile Development</span>
       </div>
-    </section>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="grid">
+      <ul>
+        <li>Built an end-to-end label scanning pipeline that extracts and structures ingredient data.</li>
+        <li>Integrated Firebase backend for notifications and ingredient safety updates.</li>
+        <li>Improved parsing accuracy by filtering irrelevant matches and prioritizing correct ingredient mapping.</li>
+        <li>Designed a clean, intuitive UI optimized for fast real-world scanning.</li>
+      </ul>
 
-        <div class="card">
-          <h3>NutriLens</h3>
-          <p class="muted">Scans nutrition labels, extracts ingredients, and explains potential health impacts.</p>
-          <div class="tags">
-            <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">OCR</span>
-          </div>
-          <ul>
-            <li>Built an end-to-end pipeline to scan labels and map ingredients to structured data.</li>
-            <li>Implemented ingredient safety alerts and updates using Firebase notifications.</li>
-            <li>Improved result quality by filtering irrelevant matches and prioritizing accurate parsing.</li>
-          </ul>
-          <p>
-            <a href="YOUR_GITHUB_PROJECT_LINK" target="_blank" rel="noreferrer">GitHub</a> ·
-            <a href="YOUR_DEMO_LINK" target="_blank" rel="noreferrer">Demo</a>
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>3D OpenGL Camping Scene</h3>
-          <p class="muted">Real-time scene with lighting, animations, and material effects using shaders.</p>
-          <div class="tags">
-            <span class="tag">C++</span><span class="tag">OpenGL</span><span class="tag">GLSL</span>
-          </div>
-          <ul>
-            <li>Implemented shader-based lighting and material effects for realism.</li>
-            <li>Built a simple object/component system for transforms and animations.</li>
-            <li>Tuned performance for smooth rendering and documented scene controls.</li>
-          </ul>
-          <p>
-            <a href="YOUR_GITHUB_PROJECT_LINK_2" target="_blank" rel="noreferrer">GitHub</a> ·
-            <a href="YOUR_DEMO_LINK_2" target="_blank" rel="noreferrer">Demo</a>
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Java Console Game</h3>
-          <p class="muted">Console game focused on clean OOP design and stable game logic.</p>
-          <div class="tags">
-            <span class="tag">Java</span><span class="tag">OOP</span><span class="tag">Data Structures</span>
-          </div>
-          <ul>
-            <li>Designed reusable classes for game entities and interactions.</li>
-            <li>Implemented game loop, state handling, and input validation.</li>
-          </ul>
-          <p><a href="YOUR_GITHUB_PROJECT_LINK_3" target="_blank" rel="noreferrer">GitHub</a></p>
-        </div>
-
-        <div class="card">
-          <h3>Python Bookstore Management System</h3>
-          <p class="muted">Console system for inventory + order tracking using structured data workflows.</p>
-          <div class="tags">
-            <span class="tag">Python</span><span class="tag">CRUD</span><span class="tag">File I/O</span>
-          </div>
-          <ul>
-            <li>Implemented CRUD operations for inventory and order tracking.</li>
-            <li>Added validation to reduce edge-case bugs.</li>
-          </ul>
-          <p><a href="YOUR_GITHUB_PROJECT_LINK_4" target="_blank" rel="noreferrer">GitHub</a></p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p><strong>Languages:</strong> Python, Java, C/C++, SQL</p>
-      <p><strong>Core:</strong> Data Structures & Algorithms, OOP, Debugging, Testing mindset, Documentation</p>
-      <p><strong>Tools/Tech:</strong> Git/GitHub, Firebase, Flutter, OpenGL/GLSL, MySQL</p>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
       <p>
-        I’m a CS graduate based in Westminster, CA, focused on building reliable software with strong fundamentals in debugging,
-        data modeling, and clean architecture. I enjoy owning features end-to-end and improving performance and maintainability.
+        <a href="https://github.com/BronsonHua1/NutriLens" target="_blank">GitHub Repository</a>
       </p>
-    </section>
+    </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
-      <p>GitHub: <a href="YOUR_GITHUB_LINK" target="_blank" rel="noreferrer">YOUR_GITHUB_LINK</a></p>
-      <p>LinkedIn: <a href="YOUR_LINKEDIN_LINK" target="_blank" rel="noreferrer">YOUR_LINKEDIN_LINK</a></p>
-    </section>
-  </main>
+    <div class="card">
+      <h3>3D OpenGL Camping Scene</h3>
+      <p class="muted">Real-time 3D scene with lighting, animation, and shader-based material effects.</p>
 
-  <footer>
-    © <span id="y"></span> Bronson Hua
-    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
-  </footer>
+      <div class="tags">
+        <span class="tag">C++</span>
+        <span class="tag">OpenGL</span>
+        <span class="tag">GLSL</span>
+        <span class="tag">Computer Graphics</span>
+      </div>
+
+      <ul>
+        <li>Implemented shader-based lighting and material systems for enhanced realism.</li>
+        <li>Built object transformation and animation systems using matrices and scene components.</li>
+        <li>Optimized rendering performance for smooth interactive demos.</li>
+        <li>Documented rendering pipeline and system architecture for presentation and review.</li>
+      </ul>
+
+      <p>
+        <!-- Add GitHub link here when ready -->
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <p><strong>Languages:</strong> Python, Java, C/C++, SQL</p>
+  <p><strong>Core Concepts:</strong> Data Structures & Algorithms, Object-Oriented Design, Debugging, Software Development Lifecycle</p>
+  <p><strong>Tools & Technologies:</strong> Git/GitHub, Firebase, Flutter, OpenGL/GLSL, MySQL</p>
+
+</section>
+
+<section id="about">
+  <h2>About</h2>
+
+  <p>
+    I am a Computer Science graduate based in Westminster, CA, with a strong foundation in software engineering principles.
+    I enjoy building systems end-to-end — from data modeling and backend integration to user-facing interfaces — with an emphasis
+    on maintainability, correctness, and performance.
+  </p>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>Email: <a href="mailto:bronsonhua741@gmail.com">bronsonhua741@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/BronsonHua1" target="_blank">github.com/BronsonHua1</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/bronson-hua" target="_blank">linkedin.com/in/bronson-hua</a></p>
+
+</section>
+
+</main>
+
+<footer>
+  © <span id="y"></span> Bronson Hua
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</footer>
+
 </body>
 </html>
